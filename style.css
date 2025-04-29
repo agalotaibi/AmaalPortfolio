@@ -1,0 +1,96 @@
+/* Reset example */
+* {
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    
+  }
+
+  body{
+    color: white;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .navbar {
+    display: flex; 
+    align-items: center;
+    list-style: none;
+    padding: .5em;
+    margin: 0;
+
+  }
+
+  .navbar li{
+    margin: 0 lem;
+  }
+
+  li.logo {
+    margin-right: auto;
+}
+
+  .programminglang{
+    list-style: none;
+  }
+
+  .homeContainer{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 200px 200px;
+    column-gap: 10px;
+  }
+
+  p{
+    font-size: 8pt;
+  }
+
+.programminglang p{
+    color: #8207ee;
+  }
+
+  .programminglang ul{
+    display: grid;
+    align-items: left; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    list-style: none;
+
+  }
+
+  .programminglang img{
+    display: inline-block;
+    margin: 25px 10px;
+    size: 20 px;
+  }
+
+.aboutContainer{
+
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+
+}
+
+.exprienceContainer{
+    display: grid;
+    align-items: top; 
+    grid-template-columns: 1fr 1px 1fr;
+    column-gap: 20px;
+}
+
+.exprienceContainer li{
+    font-size: 10px;
+}
+
+.divider{
+    background-color: #ccc;
+    width: 1px;
+    height: 8%; 
+}
