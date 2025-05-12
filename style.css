@@ -1,9 +1,8 @@
 /* Reset example */
 * {
     margin: 5;
-    padding: 5;
+    padding: 2%;
     box-sizing: border-box;
-    background-color: black;
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -15,26 +14,110 @@
     color: white;
     width: 100%;
     height: auto;
+    background-color: black;
+
+  }
+
+  h2{
+    font-size: 35pt;
+    margin-bottom: 10px; 
+
   }
 
 
   .navbar {
     display: flex; 
+    font-size: 18pt;
     align-items: center;
     list-style: none;
-    padding: .5em;
+    padding: 1%;
     margin: 0;
+    flex-wrap: nowrap; /* Keep all nav items in one line */
+    justify-content: space-around; /* Or space-between, based on your layout */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: rgba(14, 14, 14, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    }
+.navbar a {
+  text-decoration: none; /* removes underline */
+  color: #ffff; /* or white, or whatever color you want */
+  font-weight: 500;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
 
-  }
+.navbar a:hover {
+  color: #752253; /* gradient highlight or any hover effect */
+}
+
+
 
   .navbar li{
-    margin: 0 lem;
+    margin: 1px;
+    white-space: nowrap;
   }
 
   li.logo {
     margin-right: auto;
 }
 
+.gradientName {
+
+  background: linear-gradient(to right, #482775, #752253); /* You can customize these colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.shortDescritopn h1{
+  font-size: 70pt;
+  margin-bottom: 10px; 
+}
+
+.shortDescritopn p{
+  font-size: 15pt;
+}
+
+button{
+  width: 300px;
+  height: 80px;
+  flex-shrink: 0;
+  color: #fff;
+  border-radius: 100px;
+  border: 9px solid var(--great-Color, #482775);
+  background: rgba(26, 35, 93, 0.47);
+  font-size: 20pt;
+  
+
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  color: black;
+}
+.timline p{
+  font-size: 12pt;
+  font-weight: lighter;
+  text-align: start;
+  margin-bottom: 0.2px;
+  margin-top: 0.2px;
+}
+.exprienceContainer .timline {
+  margin-top: -50px;
+  margin-bottom: -20px;
+}
+
+.job{
+  font-weight: bold;
+  color: #822E77;
+}
   .programminglang{
     list-style: none;
   }
@@ -42,16 +125,16 @@
   .homeContainer{
     display: grid;
     align-items: center; 
-    grid-template-columns: 200px 200px;
-    column-gap: 10px;
+    grid-template-columns: 200px 700px;
+    column-gap: 30%;
   }
 
   p{
-    font-size: 8pt;
+    font-size: 18pt;
   }
 
 .programminglang p{
-    color: #8207ee;
+    color: #7873f5;
   }
 
   .programminglang ul{
@@ -60,6 +143,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
     list-style: none;
+    font-size: 18pt;
 
   }
 
@@ -80,17 +164,33 @@
 
 .exprienceContainer{
     display: grid;
-    align-items: top; 
-    grid-template-columns: 1fr 1px 1fr;
+    align-items: top, start; 
+    grid-template-columns: 1fr 50px 2fr;
     column-gap: 20px;
+    margin-bottom: 10PX;
 }
 
 .exprienceContainer li{
-    font-size: 10px;
+    font-size: 16pt;
 }
 
-.divider{
-    background-color: #ccc;
-    width: 1px;
-    height: 8%; 
+
+
+.divider {
+  width: 4px;
+  background: linear-gradient(to bottom, #ff6ec4, #7873f5);
+  border-radius: 2px;
+  margin: 0 20px;
+  height: 130px;
+  align-items: center;
+}
+
+.infoSideContainer{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+footer p{
+  align-items: center;
+  font-size: 15px;
 }
